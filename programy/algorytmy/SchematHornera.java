@@ -7,6 +7,7 @@ public class SchematHornera {
     }
 
     public static void main(String... args) {
+        // http://www.algorytm.edu.pl/algorytmy-maturalne/schemat-hornera.html
         int[] wspolczynniki = new int[] { 3, 3, -2, 11 };
         int stopien = 3;
         int x = 4;
