@@ -1,5 +1,6 @@
 import java.io.File;
 import java.io.FileNotFoundException;
+import java.io.PrintWriter;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
@@ -24,5 +25,11 @@ public class PracaNaPlikach {
             System.out.print(imie + ", ");
         }
         scanner.close();
+
+        PrintWriter printWriter = new PrintWriter("resources/numerowanie.txt");
+        for (int i = 1; i <= 100; i++) {
+            printWriter.println(i);
+        }
+        printWriter.close();
     }
 }
